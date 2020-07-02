@@ -12,6 +12,7 @@ from sklearn.model_selection import train_test_split
 dataset = pd.read_csv('archive/uvs_report.csv', sep=',', error_bad_lines=False, low_memory=False)
 dataset.shape
 dataset.head()
+dataset.describe()
 
 #Trim target values
 #dataset.sales_grp = dataset.sales_grp.str.strip()
