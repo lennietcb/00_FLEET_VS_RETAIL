@@ -26,7 +26,7 @@ dataset.describe()
 #Visualizations
 pt= sns.countplot(x='y', data=dataset, palette='hls')
 plt.show()
-plt.savefig('count_plot')
+plt.savefig('class_plot')
 
 fig2 = pd.crosstab(dataset.vehicle_grp,dataset.y).plot(kind='bar')
 plt.title('Sales for Vehicle Group')
